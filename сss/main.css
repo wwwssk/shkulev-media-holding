@@ -578,7 +578,7 @@ body {
 }
 @media (max-width: 1919px) {
   .contacts .contacts__container .contacts__soc .contacts__soc-item {
-    font-size: 4.7vw;
+    font-size: 1.25vw;
   }
 }
 @media (max-width: 768px) {

@@ -23,8 +23,6 @@ function onEntry(entry) {
 	entry.forEach(change => {
 		if (change.isIntersecting) {
 			change.target.classList.add('active');
-		} else {
-			change.target.classList.remove('active');
 		}
 	});
 }
@@ -97,9 +95,9 @@ for (let elm of elements) {
 		function getEventsItems(className) {
 			eventsSwiperItems.each(function (index, item) {
 				if ($(this).hasClass(className)) {
-					$(this).addClass('active-f').fadeIn(500);
+					$(this).addClass('active-f').show(500);
 				} else {
-					$(this).removeClass('active-f').fadeOut(500);
+					$(this).removeClass('active-f').hide(500);
 				}
 			});
 		}

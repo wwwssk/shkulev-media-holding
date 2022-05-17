@@ -13,11 +13,10 @@ body {
   flex: 1 1 auto;
 }
 .container {
-  width: 1440px;
-  padding: 0 1.25vw;
+  width: 1450px;
   margin: 0 auto;
   max-width: 100%;
-  padding: 0 10px;
+  padding: 0 5px;
 }
 @media (max-width: 768px) {
   .container {
@@ -65,7 +64,7 @@ body {
     font-size: 1.668vw;
   }
 }
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   .general-text {
     font-size: 5.6vw;
   }
@@ -81,7 +80,7 @@ body {
   transition: all 0.3s ease 0s;
   font-weight: 500;
   font-size: 32px;
-  line-height: 32px;
+  line-height: 100%;
   color: #FFFFFF;
 }
 .general-btn-plus:hover {
@@ -116,14 +115,15 @@ body {
 @media (max-width: 1919px) {
   .general-btn-plus {
     font-size: 1.668vw;
-    line-height: 1.668vw;
+    padding: 1.876vw 0;
   }
 }
 @media (max-width: 768px) {
   .general-btn-plus {
-    padding: 5.6vw 0;
-    font-size: 5.6vw;
+    padding: 5.607vw 0;
+    font-size: 5.607vw;
     margin-top: 7.477vw;
+    line-height: 133%;
   }
 }
 .show {
@@ -164,7 +164,7 @@ body {
 @media (max-width: 768px) {
   .digits-block .digits-block__container .digits-block__row {
     grid-template: 1fr 1fr / 1fr 1fr;
-    gap: 32px;
+    gap: 7.477vw;
   }
 }
 .digits-block .digits-block__container .digits-block__row .digits-block__item {
@@ -228,7 +228,7 @@ body {
   font-family: 'Mabry Pro';
   font-style: normal;
   font-weight: 400;
-  font-size: 24px;
+  font-size: 23px;
   line-height: 167%;
   color: #000000;
 }
@@ -240,7 +240,22 @@ body {
 }
 @media (max-width: 768px) {
   .digits-block .digits-block__container .digits-block__text {
-    font-size: 4.2vw;
+    margin-top: 7.477vw;
+    font-size: 4.673vw;
+    line-height: 133%;
+  }
+}
+@media (max-width: 768px) {
+  .digits-block .digits-block__container .digits-block__text-desktop {
+    display: none;
+  }
+}
+.digits-block .digits-block__container .digits-block__text-mobile {
+  display: none;
+}
+@media (max-width: 768px) {
+  .digits-block .digits-block__container .digits-block__text-mobile {
+    display: block;
   }
 }
 .general-block button::-moz-focus-inner {
@@ -258,7 +273,30 @@ body {
 }
 .general-block .general-header .swiper-btns-wrapper .swiper-btns {
   display: flex;
-  gap: 24px;
+  margin: 0 -12px;
+}
+@media (max-width: 1919px) {
+  .general-block .general-header .swiper-btns-wrapper .swiper-btns {
+    margin: 0 -0.625vw;
+  }
+}
+@media (max-width: 768px) {
+  .general-block .general-header .swiper-btns-wrapper .swiper-btns {
+    margin: 0 -2.804vw;
+  }
+}
+.general-block .general-header .swiper-btns-wrapper .swiper-btns button {
+  padding: 0 12px;
+}
+@media (max-width: 1919px) {
+  .general-block .general-header .swiper-btns-wrapper .swiper-btns button {
+    padding: 0 0.625vw;
+  }
+}
+@media (max-width: 768px) {
+  .general-block .general-header .swiper-btns-wrapper .swiper-btns button {
+    padding: 0 2.804vw;
+  }
 }
 .general-block .general-header .swiper-btns-wrapper .swiper-btns button:hover svg path {
   fill: #284CA6;
@@ -565,8 +603,8 @@ body {
 @media (max-width: 768px) {
   .contacts .contacts__container .contacts__soc {
     flex-wrap: wrap;
+    margin: 0 -2.804vw;
     margin-top: 9.3vw;
-    gap: 5.6vw;
   }
 }
 .contacts .contacts__container .contacts__soc .contacts__soc-item {
@@ -585,6 +623,20 @@ body {
 @media (max-width: 768px) {
   .contacts .contacts__container .contacts__soc .contacts__soc-item {
     font-size: 4.7vw;
+    padding: 0 2.804vw;
+  }
+}
+@media (max-width: 768px) {
+  .contacts .contacts__container .contacts__soc-desktop {
+    display: none;
+  }
+}
+.contacts .contacts__container .contacts__soc-mobile {
+  display: none;
+}
+@media (max-width: 768px) {
+  .contacts .contacts__container .contacts__soc-mobile {
+    display: block;
   }
 }
 /* --------social------- */
@@ -679,6 +731,7 @@ body {
   position: relative;
   width: 40px;
   height: 14px;
+  background-color: transparent;
 }
 @media (min-width: 769px) {
   .menu-header .menu-header__icon {
@@ -885,7 +938,7 @@ body {
     margin-top: 4.169vw;
   }
 }
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   .main .first-screen .first-screen__block-second {
     margin-top: 9.34vw;
   }
@@ -958,6 +1011,7 @@ body {
   .main .events .events__container .events__header .events__filter-btns {
     gap: 5.6vw;
     order: 3;
+    margin-top: 1.869vw;
   }
 }
 .main .events .events__container .events__header .events__filter-btns .events__filter-btn {
@@ -1000,12 +1054,13 @@ body {
     margin-top: 2.08vw;
   }
 }
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   .main .events__swiper {
+    margin-top: 5.607vw;
     overflow: visible;
   }
   .main .events__swiper .swiper-slide {
-    max-width: 300px;
+    max-width: 70.093vw;
   }
 }
 .main .events__swiper .events__item {
@@ -1019,6 +1074,12 @@ body {
 }
 .main .events__swiper .events__item .events__image-wrapper span {
   margin-bottom: 0 !important;
+}
+@media (max-width: 768px) {
+  .main .events__swiper .events__item .events__image-wrapper span {
+    margin-top: 3.738vw !important;
+    font-size: 4.673vw !important;
+  }
 }
 .main .projects {
   margin-top: 120px;
@@ -1038,6 +1099,12 @@ body {
   justify-content: space-between;
   align-items: center;
 }
+@media (max-width: 768px) {
+  .main .projects .projects__container .projects__header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
 .main .projects .projects__container .projects__header .projects__description-mobile {
   font-weight: 400;
   font-size: 32px;
@@ -1055,19 +1122,15 @@ body {
 }
 .main .projects .projects__container .projects__header .projects__filter-btns {
   display: flex;
-  gap: 24px;
+  margin: 0 -12px;
 }
 @media (max-width: 1919px) {
   .main .projects .projects__container .projects__header .projects__filter-btns {
-    gap: 1.251vw;
-  }
-}
-@media (max-width: 768px) {
-  .main .projects .projects__container .projects__header .projects__filter-btns {
-    gap: 3.738vw;
+    margin: 0 -0.625vw;
   }
 }
 .main .projects .projects__container .projects__header .projects__filter-btns .projects__filter-btn {
+  padding: 0 12px;
   cursor: pointer;
   font-family: 'Mabry Pro';
   font-style: normal;
@@ -1081,6 +1144,7 @@ body {
 }
 @media (max-width: 1919px) {
   .main .projects .projects__container .projects__header .projects__filter-btns .projects__filter-btn {
+    padding: 0 0.625vw;
     font-size: 1.251vw;
   }
 }
@@ -1101,10 +1165,16 @@ body {
   }
 }
 @media (max-width: 768px) {
-  .main .projects .projects__container .projects__header {
-    align-items: flex-start;
-    flex-direction: column;
-    margin-bottom: 24px;
+  .main .projects .projects__container .projects__header .projects__filter-btns-desktop {
+    display: none;
+  }
+}
+.main .projects .projects__container .projects__header .projects__filter-btns-mobile {
+  display: none;
+}
+@media (max-width: 768px) {
+  .main .projects .projects__container .projects__header .projects__filter-btns-mobile {
+    display: block;
   }
 }
 .main .projects .projects__container .projects__description {
@@ -1168,6 +1238,7 @@ body {
   padding-top: 70%;
 }
 .main .projects .projects__container .projects__items .projects__item .projects__column .projects__item-subtitle {
+  display: inline-block;
   margin-top: 40px;
   font-family: 'Mabry Pro';
   font-style: normal;
@@ -1212,6 +1283,9 @@ body {
     margin-top: 3.7vw;
     font-size: 5.6vw;
   }
+  .main .projects .projects__container .projects__items .projects__item .projects__column .projects__item-text br {
+    display: none;
+  }
 }
 .main .projects .projects__container .projects__items .projects__item:hover .projects__item-subtitle {
   position: relative;
@@ -1224,7 +1298,6 @@ body {
   width: 100%;
   height: 3px;
   background-color: #284CA6;
-  animation: border-bott-projects 1s ease;
 }
 @keyframes border-bott-projects {
   0% {
@@ -1232,6 +1305,19 @@ body {
   }
   100% {
     opacity: 1;
+  }
+}
+@media (max-width: 768px) {
+  .main .projects .projects__container .projects__items-desktop {
+    display: none;
+  }
+}
+.main .projects .projects__container .projects__items-mobile {
+  display: none;
+}
+@media (max-width: 768px) {
+  .main .projects .projects__container .projects__items-mobile {
+    display: block;
   }
 }
 .main .projects .projects__container .projects__btn-plus {
@@ -1245,6 +1331,19 @@ body {
 @media (max-width: 768px) {
   .main .projects .projects__container .projects__btn-plus {
     margin-top: 0;
+  }
+}
+@media (max-width: 768px) {
+  .main .projects .projects__container .projects__btn-plus-desktop {
+    display: none;
+  }
+}
+.main .projects .projects__container .projects__btn-plus-mobile {
+  display: none;
+}
+@media (max-width: 768px) {
+  .main .projects .projects__container .projects__btn-plus-mobile {
+    display: block;
   }
 }
 .main .history {
@@ -1282,12 +1381,27 @@ body {
   content: '';
   position: absolute;
   z-index: -1;
-  bottom: -40%;
+  top: 550px;
   left: 0;
   width: 100%;
-  height: 55%;
+  height: 100%;
   background-color: #ffffff;
   transform: skewY(5deg);
+}
+@media (max-width: 1919px) {
+  .main .history::after {
+    top: 28.661vw;
+  }
+}
+@media (max-width: 1200px) {
+  .main .history::after {
+    top: 40vw;
+  }
+}
+@media (max-width: 768px) {
+  .main .history::after {
+    top: 130vw;
+  }
 }
 @media (max-width: 768px) {
   .main .history .history__container .history__header {
@@ -1306,7 +1420,7 @@ body {
     font-size: 1.25vw;
   }
 }
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   .main .history .history__container .history__header .history__description {
     margin-left: 0;
     margin-top: 3.7vw;
@@ -1335,9 +1449,9 @@ body {
   cursor: pointer;
 }
 .main .item-history {
-  font-family: 'Mabry Pro';
-  font-style: normal;
   font-weight: 400;
+  display: flex;
+  flex-direction: column;
 }
 .main .item-history .item-history__num {
   font-size: 50px;
@@ -1389,10 +1503,11 @@ body {
 }
 .main .item-history .item-history__img img {
   max-width: 100%;
+  max-height: 100%;
 }
 .main .item-history:hover .item-history__num {
   font-weight: 500;
-  font-size: 800px;
+  font-size: 80px;
   color: #284CA6;
   transition: all 0.5s ease 0s;
 }
@@ -1423,12 +1538,87 @@ body {
     margin-top: 5.6vw;
   }
 }
-@media (max-width: 700px) {
-  .main .spec-projects .swiper-slide {
-    max-width: 300px;
+.main .spec-projects {
+  margin-top: 10px;
+}
+@media (max-width: 1919px) {
+  .main .spec-projects {
+    margin-top: 1.536vw;
   }
 }
-@media (max-width: 767px) {
+@media (max-width: 768px) {
+  .main .spec-projects {
+    margin-top: 9.346vw;
+  }
+}
+@media (max-width: 768px) {
+  .main .spec-projects .spec-projects__description-desktop {
+    display: none;
+  }
+}
+.main .spec-projects .spec-projects__description-mobile {
+  display: none;
+}
+@media (max-width: 768px) {
+  .main .spec-projects .spec-projects__description-mobile {
+    display: block;
+  }
+}
+.main .spec-projects .spec-projects__swiper {
+  overflow: visible;
+  margin: 0 -40px;
+  margin-top: 40px;
+}
+@media (max-width: 1919px) {
+  .main .spec-projects .spec-projects__swiper {
+    margin: 0 -2.084vw;
+    margin-top: 2.084vw;
+  }
+}
+@media (max-width: 768px) {
+  .main .spec-projects .spec-projects__swiper {
+    margin-top: 5.607vw;
+  }
+}
+.main .spec-projects .swiper-slide {
+  padding: 0 40px;
+  flex-shrink: 1;
+}
+@media (max-width: 1919px) {
+  .main .spec-projects .swiper-slide {
+    padding: 0 2.084vw;
+  }
+}
+.main .spec-projects .swiper-slide .spec-projects__item {
+  max-width: 440px;
+  min-width: 440px;
+}
+@media (max-width: 1919px) {
+  .main .spec-projects .swiper-slide .spec-projects__item {
+    max-width: 22.929vw;
+    min-width: 22.929vw;
+  }
+}
+@media (max-width: 768px) {
+  .main .spec-projects .swiper-slide .spec-projects__item {
+    max-width: 70.093vw;
+    min-width: 70.093vw;
+  }
+}
+@media (max-width: 768px) {
+  .main .spec-projects .swiper-slide .spec-projects__item .spec-projects__text-desktop {
+    display: none;
+  }
+}
+.main .spec-projects .swiper-slide .spec-projects__item .spec-projects__text-mobile {
+  display: none;
+}
+@media (max-width: 768px) {
+  .main .spec-projects .swiper-slide .spec-projects__item .spec-projects__text-mobile {
+    display: block;
+  }
+}
+@media (max-width: 768px) {
   .main .spec-projects .spec-projects__swiper-btns-wrapper {
     display: none;
   }
@@ -1467,6 +1657,19 @@ body {
     margin-top: 1.87vw;
   }
 }
+@media (max-width: 768px) {
+  .main .career .career__container .career__discription-desktop {
+    display: none;
+  }
+}
+.main .career .career__container .career__discription-mobile {
+  display: none;
+}
+@media (max-width: 768px) {
+  .main .career .career__container .career__discription-mobile {
+    display: block;
+  }
+}
 .main .career .career__container .career__body {
   margin-top: 40px;
 }
@@ -1476,11 +1679,12 @@ body {
   }
 }
 .main .career .career__container .career__body .career-item {
-  padding: 24px;
+  padding: 24px 32px;
   font-family: 'Mabry Pro';
   font-style: normal;
   font-weight: 400;
   font-size: 24px;
+  word-spacing: -1px;
   line-height: 133%;
   color: #000000;
   background-color: #F1F4F7;
@@ -2496,6 +2700,14 @@ body {
 @media (max-width: 768px) {
   .footer .footer__container .footer__logo {
     order: 2;
+  }
+}
+.footer .footer__container .footer__logo .footer__logo-click img:first-child {
+  margin-bottom: 24px;
+}
+@media (max-width: 1919px) {
+  .footer .footer__container .footer__logo .footer__logo-click img:first-child {
+    margin-bottom: 1.25vw;
   }
 }
 @media (max-width: 768px) {

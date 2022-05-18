@@ -113,78 +113,9 @@ for (let elm of elements) {
 
 		/* --------projects-----------------projects----------------------projects----------------- */
 
-		/* ---------------------------project-clickAdd---------------------------------- */
-		/* $('.projects__btn-plus-mobile').click(function () {
-			$('.projects__item-mobile-hidden:hidden').eq(0).show(500);
-			$('.projects__item-mobile-hidden:hidden').length < 1 ? $('button.projects__btn-plus-mobile').hide() : false;
-		}); */
 
 		/* ---------------------------------project-filter------------------------------------- */
-/* 		const projectsFilterBtns = $('.projects__filter-btn-mobile');
-		const projectsItems = $('.projects__item-mobile');
-		const projectsFilterBtn = $('.projects__filter-btn-mobile');
 
-		function projectsFilter() {
-			projectsFilterBtns.on("click", event => {
-				const targetId = event.target.getAttribute('data-id')
-				const target = $(event.target)
-
-				if (target.hasClass('projects__filter-btn-mobile')) {
-					projectsFilterBtn.each(function () {
-						$(this).removeClass('active');
-					})
-					target.addClass('active')
-				}
-
-				switch (targetId) {
-					case 'all':
-						getProjectsItems('projects__item')
-						break;
-					case 'projects-digital':
-						getProjectsItems(targetId)
-						break;
-					case 'projects-print':
-						getProjectsItems(targetId)
-						break;
-				}
-			});
-		}
-		projectsFilter()
-
-		function getProjectsItems(className) {
-			projectsItems.each(function (index, item) {
-				if ($(this).hasClass(className)) {
-					$(this).addClass('active-f').fadeIn(500);
-				} else {
-					$(this).removeClass('active-f').fadeOut(500);
-				}
-			});
-		}
- */
-
-
-
-		/* var $projects = $('.projects__item-mobiles-mobile').isotope({
-			itemSelector: '.projects__item-mobile',
-		});
-		var filterFns = {};
-		
-		$('#projects__filter-btn-mobile').on('click', '.projects__filter-btn-mobile', function () {
-			var projectsFilterValue = $(this).attr('projects-data-filter');
-			projectsFilterValue = filterFns[projectsFilterValue] || projectsFilterValue;
-			$projects.isotope({ filter: projectsFilterValue });
-		});
-
-
-		$('#projects__filter-btn-mobile').each(function (i, projectsButtonGroup) {
-			var $projectsButtonGroup = $(projectsButtonGroup);
-			$projectsButtonGroup.on('click', '.projects__filter-btn-mobile', function () {
-				$projectsButtonGroup.find('.active').removeClass('active');
-				$(this).addClass('active');
-			});
-		}); */
-
-		
 /* desktop */
 	var initial_items_desktop = 6;
 	var next_items_desktop = 2;
@@ -207,10 +138,10 @@ for (let elm of elements) {
 		var count_items = $(itemElems).length;
 
 		if (count_items > initial_items_desktop) {
-			$('#projects__btn-plus-desktop').show();
+			$('#projects__btn-plus').show();
 		}
 		else {
-			$('#projects__btn-plus-desktop').hide();
+			$('#projects__btn-plus').hide();
 		}
 		if ($('.projects__item-desktop').hasClass('visible_item')) {
 			$('.projects__item-desktop').removeClass('visible_item');
@@ -244,7 +175,7 @@ for (let elm of elements) {
 			}
 		});
 		if (itemsCount >= itemsMax) {
-			$('#projects__btn-plus-desktop').hide(300);
+			$('#projects__btn-plus').hide(300);
 		}
 		$projectsItems_desktop.isotope('layout');
 	}
@@ -259,11 +190,11 @@ for (let elm of elements) {
 			itemsCount++;
 		});
 		if (itemsCount < itemsMax || initial_items_desktop >= itemsMax) {
-			$('#projects__btn-plus-desktop').hide(300);
+			$('#projects__btn-plus').hide(300);
 		}
 		$projectsItems_desktop.isotope('layout');
 	}
-	$('#projects__btn-plus-desktop').on('click', function (e) {
+	$('#projects__btn-plus').on('click', function (e) {
 		e.preventDefault();
 		showNextItems_desktop(next_items_desktop);
 	});
@@ -293,10 +224,10 @@ for (let elm of elements) {
 		var count_items = $(itemElems).length;
 
 		if (count_items > initial_items_mobile) {
-			$('#projects__btn-plus-mobile').show();
+			$('#projects__btn-plus').show();
 		}
 		else {
-			$('#projects__btn-plus-mobile').hide();
+			$('#projects__btn-plus').hide();
 		}
 		if ($('.projects__item-mobile').hasClass('visible_item')) {
 			$('.projects__item-mobile').removeClass('visible_item');
@@ -330,7 +261,7 @@ for (let elm of elements) {
 			}
 		});
 		if (itemsCount >= itemsMax) {
-			$('#projects__btn-plus-mobile').hide(300);
+			$('#projects__btn-plus').hide(300);
 		}
 		$projectsItems_mobile.isotope('layout');
 	}
@@ -345,11 +276,11 @@ for (let elm of elements) {
 			itemsCount++;
 		});
 		if (itemsCount < itemsMax || initial_items_mobile >= itemsMax) {
-			$('#projects__btn-plus-mobile').hide(300);
+			$('#projects__btn-plus').hide(300);
 		}
 		$projectsItems_mobile.isotope('layout');
 	}
-	$('#projects__btn-plus-mobile').on('click', function (e) {
+	$('#projects__btn-plus').on('click', function (e) {
 		e.preventDefault();
 		showNextItems_mobile(next_items_mobile);
 	});

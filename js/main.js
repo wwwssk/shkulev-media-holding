@@ -302,12 +302,12 @@ for (let elm of elements) {
 
 
 		/* ----------history-----------------history--------------------history--------------------- */
-		var swiper = new Swiper(".history__swiper", {
+		var swiper = new Swiper(".main-history__swiper", {
 			slidesPerView: 1,
 			spaceBetween: 80,
 			navigation: {
-				prevEl: ".history__swiper-btn-prev",
-				nextEl: ".history__swiper-btn-next",
+				prevEl: ".main-history__swiper-btn-prev",
+				nextEl: ".main-history__swiper-btn-next",
 			},
 			breakpoints: {
 				769: {

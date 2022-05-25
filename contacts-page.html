@@ -41,7 +41,7 @@
 								<a href="#career" class="menu-header__link click">Карьера</a>
 							</li>
 							<li class="menu-header__item ">
-								<a href="#" class="menu-header__link click" style="color: #284CA6;">Новости</a>
+								<a href="#" class="menu-header__link click">Новости</a>
 							</li>
 							<li class="menu-header__item ">
 								<a href="#contacts" class="menu-header__link click">Контакты</a>
@@ -55,126 +55,144 @@
 			</div>
 		</header>
 		<div class="page">
-			<main class="news">
-				<div class="news__container container">
-					<div class="news__header show">
-						<h2 class="news__title general-title">
-							Новости
+			<main class="contacts-page">
+				<div class="contacts-page__map ibg">
+					<img src="img/contacts-page/img.png" alt="">
+				</div>
+				<div class="container">
+					<div class="contacts-page__body">
+						<div class="contacts-page__item contacts-page__item-big">
+							<h2 class="contacts-page__item-title contacts-page__item-title-mosk general-title">
+								Москва
+							</h2>
+							<div class="contacts-page__item-row">
+								<div class="contacts-page__item-img-wrapper">
+									<div class="contacts-page__item-img ibg">
+									</div>
+								</div>
+								<div class="contacts-page__item-column">
+									<a href="#" class="contacts-page__item-loc">
+										<img src="img/contacts-page/_.svg" alt="">
+										<span>
+											115114, г. Москва, <br> ул. Дербеневская, д. 15Б
+										</span>
+									</a>
+									<a href="tel:4956335757" class="contacts-page__item-tel">
+										+7 495 633-57-57
+									</a>
+									<a href="mailto:info@hsmedia.ru" class="contacts-page__item-email">
+										info@hsmedia.ru
+									</a>
+									<a href="mailto:info@hsmedia.ru" class="contacts-page__item-send">
+										<img src="img/contacts-page/_.svg" alt="">
+										<span>
+											отправить письмо
+										</span>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="contacts-page__item contacts-page__item-small">
+							<h2 class="contacts-page__item-title general-title">
+								Новосибирск
+							</h2>
+							<div class="contacts-page__item-column">
+								<a href="#" class="contacts-page__item-loc">
+									<img src="img/contacts-page/_.svg" alt="">
+									<span>
+										630099, г. Новосибирск, <br>
+										ул. Ленина , д. 12, 6 этаж
+									</span>
+								</a>
+								<a href="tel:8002000383" class="contacts-page__item-tel">
+									8 800 2000-383
+								</a>
+								<a href="mailto:ngs@hsmedia.ru" class="contacts-page__item-email">
+									ngs@hsmedia.ru
+								</a>
+								<a href="mailto:ngs@hsmedia.ru" class="contacts-page__item-send">
+									<img src="img/contacts-page/_.svg" alt="">
+									<span>
+										отправить письмо
+									</span>
+								</a>
+							</div>
+						</div>
+						<div class="contacts-page__item contacts-page__item-small">
+							<h2 class="contacts-page__item-title general-title">
+								Санкт-Петербург
+							</h2>
+							<div class="contacts-page__item-column">
+								<a href="#" class="contacts-page__item-loc">
+									<img src="img/contacts-page/_.svg" alt="">
+									<span>
+										191186, г. Санкт-Петербург, <br>
+										набережная реки Мойки, дом 37, 2 этаж
+									</span>
+								</a>
+								<a href="tel:8125705596" class="contacts-page__item-tel">
+									+7 812 570-55-96
+								</a>
+								<a href="mailto:spb@hsmedia.ru" class="contacts-page__item-email">
+									spb@hsmedia.ru
+								</a>
+								<a href="mailto:spb@hsmedia.ru" class="contacts-page__item-send">
+									<img src="img/contacts-page/_.svg" alt="">
+									<span>
+										отправить письмо
+									</span>
+								</a>
+							</div>
+						</div>
+					</div>
+					<form action="#" class="contacts-page__form form-contacts-page">
+						<h2 class="contacts-page__item-title form-contacts-page__title general-title">
+							Обратная связь
 						</h2>
-						<div class="news__btns-filter">
-							<button class="news__btn-filter" news-data-filter="">
-								все
-							</button>
-							<button class="news__btn-filter" news-data-filter=".news">
-								новости
-							</button>
-							<button class="news__btn-filter" news-data-filter=".meeting">
-								мероприятия
-							</button>
-						</div>
-					</div>
-					<div class="news__row">
-						<div class="news__item show item-news">
-							<div class="item-news__img ibg">
-								<img src="img/news/1.png" alt="">
+						<div class="form-contacts-page__body">
+							<div class="form-contacts-page__left">
+								<div class="form-contacts-page__items">
+									<div class="form-contacts-page__item">
+										<label for="formName" class="form-contacts-page__label">Ваше имя</label>
+										<input id="formName" type="text" name="name" class="form-contacts-page__input">
+									</div>
+									<div class="form-contacts-page__item">
+										<label for="formEmail" class="form-contacts-page__label">Адрес эл. почты</label>
+										<input id="formEmail" type="text" name="email" class="form-contacts-page__input">
+									</div>	
+									<div class="form-contacts-page__item">
+										<label for="formTel" class="form-contacts-page__label">Телефон</label>
+										<input id="formTel" type="tel" name="tel" placeholder="8 (___) ___ __ __" class="form-contacts-page__input">
+									</div>
+								</div>
 							</div>
-							<div class="item-news__date">
-								сегодня
-							</div>
-							<div class="item-news__text">
-								Бренд ELLE Girl присоединился к коммерческой команде ELLE
-							</div>
-						</div>
-						<div class="news__item show item-news">
-							<div class="item-news__img ibg">
-								<img src="img/news/2.png" alt="">
-							</div>
-							<div class="item-news__date">
-								сегодня
-							</div>
-							<div class="item-news__text">
-								Рейтинг сексуальности звезд по версии журнала MAXIM
+							<div class="form-contacts-page__right">
+								<div class="form-contacts-page__message">
+									<label for="formMessage" class="form-contacts-page__label">Сообщение</label>
+									<textarea  id="formMessage" type="text" name="Message" class="form-contacts-page__input form-contacts-page__input-big"></textarea>
+								</div>
 							</div>
 						</div>
-						<div class="news__item show item-news">
-							<div class="item-news__img ibg">
-								<img src="img/news/3.png" alt="">
+						<div class="form-contacts-page__bottom">
+							<div class="form-contacts-page__data">
+								<span class="form-contacts-page__click">
+									<img src="img/contacts-page/Union.svg" alt="">
+								</span>
+								<label class="form-contacts-page__data-text">
+									Я понимаю и соглашаюсь, <br> что мои данные будут храниться
+									и обрабатываться в соответствии <br> с Федеральным законом
+									«О персональных данных».
+								</label>
 							</div>
-							<div class="item-news__date">
-								28 мая
-							</div>
-							<div class="item-news__text">
-								Татьяна Бакальчук стала героиней февральского номера Marie Claire
-							</div>
-						</div>
-						<div class="news__item show item-news">
-							<div class="item-news__img ibg">
-								<img src="img/news/4.png" alt="">
-							</div>
-							<div class="item-news__date">
-								вчера
-							</div>
-							<div class="item-news__text">
-								Юбилей: 160 лет журналу «Вокруг Света»
+							<div class="form-contacts-page__btn-wrapper">
+								<button class="form-contacts-page__btn">
+									<span>
+										Отправить
+									</span>
+								</button>
 							</div>
 						</div>
-						<div class="news__item show item-news">
-							<div class="item-news__img ibg">
-								<img src="img/news/5.png" alt="">
-							</div>
-							<div class="item-news__date">
-								вчера
-							</div>
-							<div class="item-news__text">
-								Подкаст от журнала Marie Claire
-								«Я так решила»
-							</div>
-						</div>
-						<div class="news__item show item-news">
-							<div class="item-news__img ibg">
-								<img src="img/news/6.png" alt="">
-							</div>
-							<div class="item-news__date">
-								26 мая
-							</div>
-							<div class="item-news__text">
-								Новые рекорды подписчиков в социальных сетях Marie Claire
-							</div>
-						</div>
-						<div class="news__item show item-news">
-							<div class="item-news__img ibg">
-								<img src="img/news/7.png" alt="">
-							</div>
-							<div class="item-news__date">
-								20 мая
-							</div>
-							<div class="item-news__text">
-								PSYCHOLOGIES приглашает в полезное путешествие в Карелию
-							</div>
-						</div>
-						<div class="news__item show item-news">
-							<div class="item-news__img ibg">
-								<img src="img/news/8.png" alt="">
-							</div>
-							<div class="item-news__date">
-								16 мая
-							</div>
-							<div class="item-news__text">
-								Marie Claire провёл вечеринку для блогеров
-							</div>
-						</div>
-						<div class="news__item show item-news">
-							<div class="item-news__img ibg">
-								<img src="img/news/9.png" alt="">
-							</div>
-							<div class="item-news__date">
-								16 мая
-							</div>
-							<div class="item-news__text">
-								Конкурс красоты MISS MAXIM 2022 стартовал
-							</div>
-						</div>
-					</div>
+					</form>
 				</div>
 			</main>
 		</div>
@@ -325,6 +343,13 @@
 	<script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
 	<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 	<script src="js/main.js"></script>
+
+	<script>
+		const form_checkbox = document.querySelector('.form-contacts-page__click');
+		form_checkbox.addEventListener("click", function(e) {
+			form_checkbox.classList.toggle('active')
+		});
+	</script>
 </body>
 
 </html>

@@ -2,7 +2,7 @@
 
 
 /* ---------news-------------------news--------------------------news------------------ */
-							var newsProjects = $('.news__row').isotope({
+						/* 	var newsProjects = $('.news__row').isotope({
 								itemSelector: '.news__item',
 							});
 							var newsFilterFns = {};
@@ -18,7 +18,14 @@
 									$newsButtonGroup.find('.active').removeClass('active');
 									$(this).addClass('active');
 								});
+							}); */
+
+							$('.news-page__btn-plus').click(function () {
+								$('.news__row-next:hidden').eq(0).show(500);
+								$('.news__row-next:hidden').length < 1 ? $('button.news-page__btn-plus').hide(200) : false;
 							});
+
+
 
 
 /* ------------------career--------------------------career------------------------career------ */

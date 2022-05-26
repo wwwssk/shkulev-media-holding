@@ -184,15 +184,9 @@
 								читает каждый третий житель России.
 							</p>
 							<div class="projects__filter-btns projects__filter-btns-desktop">
-								<button class="projects__filter-btn projects__filter-btn-desktop active" data-filter="*">все</button>
-								<button class="projects__filter-btn projects__filter-btn-desktop" data-filter=".projects-digital">digital</button>
-								<button class="projects__filter-btn projects__filter-btn-desktop" data-filter=".projects-print">print</button>
-							</div>
-
-							<div class="projects__filter-btns projects__filter-btns-mobile">
-								<button class="projects__filter-btn projects__filter-btn-mobile active" data-filter="*">все</button>
-								<button class="projects__filter-btn projects__filter-btn-mobile" data-filter=".projects-digital">digital</button>
-								<button class="projects__filter-btn projects__filter-btn-mobile" data-filter=".projects-print">print</button>
+								<button class="projects__filter-btn active" data-filter="*">все</button>
+								<button class="projects__filter-btn" data-filter=".projects-digital-desktop">digital</button>
+								<button class="projects__filter-btn" data-filter=".projects-print-desktop">print</button>
 							</div>
 						</div>
 						<p class="projects__description general-text show">
@@ -200,9 +194,9 @@
 							читает каждый
 							третий житель России.
 						</p>
-						<div class="projects__row">
-							<div class="projects__items projects__items-desktop" id="projects__items-desktop">
-								<div class="projects__item projects__item-desktop show projects-digital">
+						<div class="projects__items-wrapper">
+							<div class="projects__items projects__items-desktop grid" id="projects__items-desktop">
+								<div class="projects__item projects__item-desktop projects-print-desktop ">
 									<div class="projects__column">
 										<a href="#" class="projects__item-image ibg">
 											<img src="img/main/3projects/1.png" alt="">
@@ -213,11 +207,11 @@
 											</span>
 										</a>
 										<p class="projects__item-text">
-											ELLE сегодня — это журнал и огромная мультимедийная платформа
+											ELLE сегодня — это журнал и огромная<br> мультимедийная платформа
 										</p>
 									</div>
 								</div>
-								<div class="projects__item projects__item-desktop show projects-print">
+								<div class="projects__item projects__item-desktop projects-digital-desktop ">
 									<div class="projects__column">
 										<a href="#" class="projects__item-image ibg">
 											<img src="img/main/3projects/2.png" alt="">
@@ -232,7 +226,7 @@
 										</p>
 									</div>
 								</div>
-								<div class="projects__item projects__item-desktop show projects-print">
+								<div class="projects__item projects__item-desktop projects-print-desktop ">
 									<div class="projects__column">
 										<a href="#" class="projects__item-image ibg">
 											<img src="img/main/3projects/3.png" alt="">
@@ -243,11 +237,11 @@
 											</span>
 										</a>
 										<p class="projects__item-text">
-											Актуальные и яркие герои, эксклюзивные коллаборации и редакционные проекты
+											Актуальные и яркие герои, эксклюзивные <br> коллаборации и редакционные проекты
 										</p>
 									</div>
 								</div>
-								<div class="projects__item projects__item-desktop show projects-digital">
+								<div class="projects__item projects__item-desktop projects-digital-desktop ">
 									<div class="projects__column">
 										<a href="#" class="projects__item-image ibg">
 											<img src="img/main/3projects/4.png" alt="">
@@ -262,7 +256,7 @@
 										</p>
 									</div>
 								</div>
-								<div class="projects__item projects__item-desktop show projects-print">
+								<div class="projects__item projects__item-desktop projects-print-desktop ">
 									<div class="projects__column">
 										<a href="#" class="projects__item-image ibg">
 											<img src="img/main/3projects/5.png" alt="">
@@ -273,11 +267,11 @@
 											</span>
 										</a>
 										<p class="projects__item-text">
-											Источник познавательного и увлекательного чтения для самой широкой аудитории
+											Источник познавательного и увлекательного <br> чтения для самой широкой аудитории
 										</p>
 									</div>
 								</div>
-								<div class="projects__item projects__item-desktop show projects-digital">
+								<div class="projects__item projects__item-desktop projects-digital-desktop ">
 									<div class="projects__column">
 										<a href="#" class="projects__item-image ibg">
 											<img src="img/main/3projects/6.png" alt="">
@@ -292,22 +286,7 @@
 										</p>
 									</div>
 								</div>
-								<div class="projects__item projects__item-desktop show projects-print">
-									<div class="projects__column">
-										<a href="#" class="projects__item-image ibg">
-											<img src="img/main/3projects/5.png" alt="">
-										</a>
-										<a href="#">
-											<span class="projects__item-subtitle">
-												Вокруг Света
-											</span>
-										</a>
-										<p class="projects__item-text">
-											Источник познавательного и увлекательного чтения для самой широкой аудитории
-										</p>
-									</div>
-								</div>
-								<div class="projects__item projects__item-desktop show projects-digital">
+								<div class="projects__item projects__item-desktop projects-print-desktop ">
 									<div class="projects__column">
 										<a href="#" class="projects__item-image ibg">
 											<img src="img/main/3projects/3.png" alt="">
@@ -318,92 +297,11 @@
 											</span>
 										</a>
 										<p class="projects__item-text">
-											Актуальные и яркие герои, эксклюзивные коллаборации и редакционные проекты
+											Актуальные и яркие герои, эксклюзивные <br> коллаборации и редакционные проекты
 										</p>
 									</div>
 								</div>
-								<div class="projects__item projects__item-desktop show projects-print">
-									<div class="projects__column">
-										<a href="#" class="projects__item-image ibg">
-											<img src="img/main/3projects/6.png" alt="">
-										</a>
-										<a href="#">
-											<span class="projects__item-subtitle">
-												Maxim
-											</span>
-										</a>
-										<p class="projects__item-text">
-											Самый популярный мужской медиа-бренд в России
-										</p>
-									</div>
-								</div>
-								<div class="projects__item projects__item-desktop show projects-print">
-									<div class="projects__column">
-										<a href="#" class="projects__item-image ibg">
-											<img src="img/main/3projects/1.png" alt="">
-										</a>
-										<a href="#">
-											<span class="projects__item-subtitle">
-												Elle
-											</span>
-										</a>
-										<p class="projects__item-text">
-											ELLE сегодня — это журнал и огромная мультимедийная платформа
-										</p>
-									</div>
-								</div>
-							</div>
-
-
-
-
-							<div class="projects__items projects__items-mobile" id="projects__items-mobile">
-								<div class="projects__item projects__item-mobile show projects-digital">
-									<div class="projects__column">
-										<a href="#" class="projects__item-image ibg">
-											<img src="img/main/3projects/1.png" alt="">
-										</a>
-										<a href="#">
-											<span class="projects__item-subtitle">
-												Elle
-											</span>
-										</a>
-										<p class="projects__item-text">
-											ELLE сегодня — это журнал и огромная мультимедийная платформа
-										</p>
-									</div>
-								</div>
-								<div class="projects__item projects__item-mobile show projects-print">
-									<div class="projects__column">
-										<a href="#" class="projects__item-image ibg">
-											<img src="img/main/3projects/2.png" alt="">
-										</a>
-										<a href="#">
-											<span class="projects__item-subtitle">
-												Marie Claire
-											</span>
-										</a>
-										<p class="projects__item-text">
-											Один из самых узнаваемых fashion-<br>журналов в мире
-										</p>
-									</div>
-								</div>
-								<div class="projects__item projects__item-mobile show projects-print">
-									<div class="projects__column">
-										<a href="#" class="projects__item-image ibg">
-											<img src="img/main/3projects/3.png" alt="">
-										</a>
-										<a href="#">
-											<span class="projects__item-subtitle">
-												Elle Girl
-											</span>
-										</a>
-										<p class="projects__item-text">
-											Актуальные и яркие герои, эксклюзивные коллаборации и редакционные проекты
-										</p>
-									</div>
-								</div>
-								<div class="projects__item projects__item-mobile show projects-digital">
+								<div class="projects__item projects__item-desktop projects-digital-desktop ">
 									<div class="projects__column">
 										<a href="#" class="projects__item-image ibg">
 											<img src="img/main/3projects/4.png" alt="">
@@ -414,11 +312,11 @@
 											</span>
 										</a>
 										<p class="projects__item-text">
-											Успешный глобальный бренд, существующий в 6 странах на 6 языках
+											Успешный глобальный бренд, <br> существующий в 6 странах на 6 языках
 										</p>
 									</div>
 								</div>
-								<div class="projects__item projects__item-mobile show projects-print">
+								<div class="projects__item projects__item-desktop projects-print-desktop ">
 									<div class="projects__column">
 										<a href="#" class="projects__item-image ibg">
 											<img src="img/main/3projects/5.png" alt="">
@@ -429,11 +327,11 @@
 											</span>
 										</a>
 										<p class="projects__item-text">
-											Источник познавательного и увлекательного чтения для самой широкой аудитории
+											Источник познавательного и увлекательного <br> чтения для самой широкой аудитории
 										</p>
 									</div>
 								</div>
-								<div class="projects__item projects__item-mobile show projects-digital">
+								<div class="projects__item projects__item-desktop projects-digital-desktop ">
 									<div class="projects__column">
 										<a href="#" class="projects__item-image ibg">
 											<img src="img/main/3projects/6.png" alt="">
@@ -448,71 +346,11 @@
 										</p>
 									</div>
 								</div>
-								<div class="projects__item projects__item-mobile show projects-print">
-									<div class="projects__column">
-										<a href="#" class="projects__item-image ibg">
-											<img src="img/main/3projects/5.png" alt="">
-										</a>
-										<a href="#">
-											<span class="projects__item-subtitle">
-												Вокруг Света
-											</span>
-										</a>
-										<p class="projects__item-text">
-											Источник познавательного и увлекательного чтения для самой широкой аудитории
-										</p>
-									</div>
-								</div>
-								<div class="projects__item projects__item-mobile show projects-digital">
-									<div class="projects__column">
-										<a href="#" class="projects__item-image ibg">
-											<img src="img/main/3projects/3.png" alt="">
-										</a>
-										<a href="#">
-											<span class="projects__item-subtitle">
-												Elle Girl
-											</span>
-										</a>
-										<p class="projects__item-text">
-											Актуальные и яркие герои, эксклюзивные коллаборации и редакционные проекты
-										</p>
-									</div>
-								</div>
-								<div class="projects__item projects__item-mobile show projects-print">
-									<div class="projects__column">
-										<a href="#" class="projects__item-image ibg">
-											<img src="img/main/3projects/6.png" alt="">
-										</a>
-										<a href="#">
-											<span class="projects__item-subtitle">
-												Maxim
-											</span>
-										</a>
-										<p class="projects__item-text">
-											Самый популярный мужской медиа-бренд в России
-										</p>
-									</div>
-								</div>
-								<div class="projects__item projects__item-mobile show projects-print">
-									<div class="projects__column">
-										<a href="#" class="projects__item-image ibg">
-											<img src="img/main/3projects/1.png" alt="">
-										</a>
-										<a href="#">
-											<span class="projects__item-subtitle">
-												Elle
-											</span>
-										</a>
-										<p class="projects__item-text">
-											ELLE сегодня — это журнал и огромная мультимедийная платформа
-										</p>
-									</div>
-								</div>
 							</div>
+							<button class="projects__btn-plus projects__btn-plus-desktop general-btn-plus" id="projects__btn-plus-desktop">
+								Еще проекты
+							</button>
 						</div>
-						<button id="projects__btn-plus" class="projects__btn-plus projects__btn-plus-desktop general-btn-plus show">
-							Еще проекты
-						</button>
 					</div>
 				</section>
 				<section class="main__history history general-block">
@@ -739,7 +577,7 @@
 							<h2 class="spec-projects__title general-title">
 								Спецпроекты
 							</h2>
-							<div class="spec-projects__swiper-btns-wrapper swiper-btns-wrapper">
+							<div class="spec-projects__swiper-btns-wrapper-main spec-projects__swiper-btns-wrapper swiper-btns-wrapper">
 								<div class="spec-projects__swiper-btns swiper-btns">
 									<button class="spec-projects__swiper-btn-prev swiper-btn-prev">
 										<svg width="40" height="20" viewBox="0 0 40 20" fill="none"
@@ -769,7 +607,7 @@
 							Отдел спецпроектов использует накопленный опыт для создания современных многоформатных рекламных проектов для клиентов
 							на всех платформах.
 						</div>
-						<div class="swiper spec-projects__swiper show">
+						<div class="swiper spec-projects__swiper-main spec-projects__swiper show">
 							<div class="swiper-wrapper spec-projects__wrapper">
 								<div class="swiper-slide">
 									<div class="spec-projects__item">
@@ -857,7 +695,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="swiper events__swiper general-swiper show">
+						<div style="overflow: hidden;" class="swiper events__swiper general-swiper show">
 							<div class="swiper-wrapper events__swiper-wrapper">
 								<div class="swiper-slide events__swiper-item events-new">
 									<a href="#" class="events__item general-swiper__item">

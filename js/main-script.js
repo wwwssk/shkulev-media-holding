@@ -1,3 +1,41 @@
+/* ---------------------появление элементов при прокрутке--------------------------- */
+							function onEntry(entry) {
+								entry.forEach(change => {
+									if (change.isIntersecting) {
+										change.target.classList.add('active');
+									}
+								});
+							}
+							let options = {
+								threshold: [0.5] };
+							let observer = new IntersectionObserver(onEntry, options);
+							let elements = document.querySelectorAll('.show');
+							for (let elm of elements) {
+								observer.observe(elm);
+							}
+
+							$('.menu-header__item-projects').hover(
+								function () {
+									$('.menu-page-wrapper, .menu-header__item-projects').addClass('active');
+								},
+								function () {
+									$('.menu-page-wrapper, .menu-header__item-projects').removeClass('active');
+								}
+							);
+
+
+							$(".icon-menu-header").click(function () {
+								$('.icon-menu-header, .header, .menu-page-mobile').toggleClass("active");
+							});
+
+
+							$(document).ready(function() {
+							$('.menu-page-mobile__title-projects-main').click(function(event) {
+								$(this).toggleClass('active').next().slideToggle(600);
+								$('.menu-page-mobile__item-projects-main').toggleClass('active');
+								});
+							}); 
+
 /* sgp--------------------------sgp------------------------------sgp */
 							$('.item-sgp__btn-plus').click(function () {
 								$('.item-sgp-hidden:hidden').eq(0).show(600);
@@ -5,49 +43,28 @@
 							});
 
 
-							const newsFilterBtns = $('.news__btns-filter');
-							const newsSwiperItems = $('.news__row');
-							const newsFilterBtn = $('.news__btn-filter');
-							function newsFilter() {
-								newsFilterBtns.on("click", event => {
-									const targetId = event.target.getAttribute('data-id')
-									const target = $(event.target)
-								
-									if (target.hasClass('news__btn-filter')) {
-										newsFilterBtn.each(function () {
-											$(this).removeClass('active');
-										})
-										target.addClass('active')
-									}
-								
-									switch (targetId) {
-										case 'all':
-											getnewsItems('news__item')
-											break;
-										case 'news-new':
-											getnewsItems(targetId)
-											break;
-										case 'news-meeting':
-											getnewsItems(targetId)
-											break;
-									}
-								});
-							}
-							newsFilter()
-							function getnewsItems(className) {
-								newsSwiperItems.each(function (index, item) {
-									if ($(this).hasClass(className)) {
-										var that = $(this);
-									
-										setTimeout(function () {
-											that.show(400);
-										}, 0);
-									} else {
-										var that = $(this);
-									
-										setTimeout(function () {
-											that.hide(400);
-										}, 430);
-									}
+
+
+							$('.news-page__btn-plus').click(function () {
+										$('.news__row-next:hidden').eq(0).show(500);
+										$('.news__row-next:hidden').length < 1 ? $('button.news-page__btn-plus').hide(200) : false;
+									});
+
+
+/* ------------------career--------------------------career------------------------career------ */
+							var swiper = new Swiper(".tell-us-career__swiper", {
+								spaceBetween: 40,
+								allowTouchMove: false,
+								pagination: {
+									el: ".tell-us-career__pagination",
+									clickable: true,
+								},
+							});
+						
+							const careerClickBtn = document.querySelector('.tell-us-career__personal-information--click');
+							
+							if (true) {
+								careerClickBtn.addEventListener("click", function(e) {
+									careerClickBtn.classList.toggle('active')
 								});
 							}

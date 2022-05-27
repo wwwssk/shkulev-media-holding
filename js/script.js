@@ -1,48 +1,8 @@
-/* ---------------------появление элементов при прокрутке--------------------------- */
-	function onEntry(entry) {
-		entry.forEach(change => {
-			if (change.isIntersecting) {
-				change.target.classList.add('active');
-			}
-		});
-	}
-	let options = {
-		threshold: [0.5] };
-	let observer = new IntersectionObserver(onEntry, options);
-	let elements = document.querySelectorAll('.show');
-	for (let elm of elements) {
-		observer.observe(elm);
-	}
-
-	$('.menu-header__item-projects').hover(
-		function () {
-			$('.menu-page-wrapper, .menu-header__item-projects').addClass('active');
-		},
-		function () {
-			$('.menu-page-wrapper, .menu-header__item-projects').removeClass('active');
-		}
-	);
-
-
-	$(".icon-menu-header").click(function () {
-		$('.icon-menu-header, .header, .menu-page-mobile').toggleClass("active");
-   });
-
-
-	$(document).ready(function() {
-	$('.menu-page-mobile__title-projects-main').click(function(event) {
-		$(this).toggleClass('active').next().slideToggle(600);
-		$('.menu-page-mobile__item-projects-main').toggleClass('active');
-		});
-	}); 
-
-
 /* ------------main----------------------------main------------------------main---------------------main-------------------- */
 			
-
 			//events
 						//events-filter
-							const eventsFilterBtns = $('.events__filter-btns');
+							/* const eventsFilterBtns = $('.events__filter-btns');
 							const eventsSwiperItems = $('.events__swiper-item');
 							const eventsFilterBtn = $('.events__filter-btn');
 							function eventsFilter() {
@@ -87,11 +47,10 @@
 										}, 430);
 									}
 								});
-							}
+							} */
 						//events-swiper
-							var swiper = new Swiper(".events__swiper", {
+							/* var swiper = new Swiper(".events__swiper", {
 								slidesPerView: 'auto',
-								spaceBetween: 24,
 								navigation: {
 									prevEl: ".events__swiper-btn-prev",
 									nextEl: ".events__swiper-btn-next",
@@ -99,14 +58,49 @@
 								breakpoints: {
 									769: {
 										slidesPerView: 3,
-										spaceBetween: 24,
 									},
 									1024: {
 										slidesPerView: 4,
-										spaceBetween: 80,
 									},
 								},
+							}); */
+
+							$(function() {
+								$(".slider").slick({
+									slidesToShow: 4,
+									arrows: true,
+									infinite: false,
+									speed: 300,
+									responsive: [
+										{
+											breakpoint: 769,
+											settings: {
+												slidesToShow: 1,
+												infinite: false,
+												variableWidth: true
+											}
+										}
+									]
+								});
+							
+								$(".events__filter-btn").on('click', function(){
+									var filter = $(this).data('filter');
+									$(".slider").slick('slickUnfilter');
+
+									if(filter == 'events-new'){
+										$(".slider").slick('slickFilter','.events-new');
+									}
+									else if(filter == 'events-meeting'){
+										$(".slider").slick('slickFilter','.events-meeting');
+									}
+									else if(filter == 'all'){
+									
+										$(".slider").slick('slickUnfilter');
+									}
+								})
 							});
+						
+
 
 			//projects
 						//project-filter
@@ -219,6 +213,7 @@
 						//spec-projects-swiper
 							var swiper = new Swiper(".spec-projects__swiper-main", {
 								slidesPerView: 'auto',
+								autoHeight: true,
 								navigation: {
 									prevEl: ".spec-projects__swiper-btn-prev",
 									nextEl: ".spec-projects__swiper-btn-next",
@@ -346,30 +341,30 @@
 
 
 
-		var swiper = new Swiper(".elle-events__swiper", {
-			slidesPerView: 'auto',
-			spaceBetween: 80,
-			navigation: {
-				prevEl: ".elle-events__swiper-btn-prev",
-				nextEl: ".elle-events__swiper-btn-next",
-			},
-		});
-		var swiper = new Swiper(".project-page__spec-projects-swiper", {
-			slidesPerView: 1,
-			spaceBetween: 40,
-			navigation: {
-				prevEl: ".project-page-spec-projects__swiper-btn-prev",
-				nextEl: ".project-page-spec-projects__swiper-btn-next",
-			},
-			breakpoints: {
-				700: {
-					slidesPerView: 2,
-					spaceBetween: 60,
-				},
-				1200: {
-					slidesPerView: 3,
-					spaceBetween: 80,
-				},
-			},
-		});
+							var swiper = new Swiper(".elle-events__swiper", {
+								slidesPerView: 'auto',
+								spaceBetween: 80,
+								navigation: {
+									prevEl: ".elle-events__swiper-btn-prev",
+									nextEl: ".elle-events__swiper-btn-next",
+								},
+							});
+							var swiper = new Swiper(".project-page__spec-projects-swiper", {
+								slidesPerView: 1,
+								spaceBetween: 40,
+								navigation: {
+									prevEl: ".project-page-spec-projects__swiper-btn-prev",
+									nextEl: ".project-page-spec-projects__swiper-btn-next",
+								},
+								breakpoints: {
+									700: {
+										slidesPerView: 2,
+										spaceBetween: 60,
+									},
+									1200: {
+										slidesPerView: 3,
+										spaceBetween: 80,
+									},
+								},
+							});
 

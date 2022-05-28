@@ -13,15 +13,13 @@ body {
   flex: 1 1 auto;
 }
 .container {
-  width: 1470px;
+  width: 1440px;
   margin: 0 auto;
   max-width: 100%;
-  padding: 0 15px;
 }
 @media (max-width: 1919px) {
   .container {
     width: 76.602vw;
-    padding: 0 0.782vw;
   }
 }
 @media (max-width: 768px) {
@@ -5339,7 +5337,12 @@ body {
 }
 /* ----------------------------news-page-------------------------news-page------------------------news-page---------------------- */
 .news-page {
-  margin-bottom: 5.003vw;
+  margin-bottom: 96px;
+}
+@media (max-width: 1919px) {
+  .news-page {
+    margin-bottom: 5.003vw;
+  }
 }
 .news-page h2 {
   font-weight: 500;
@@ -5492,7 +5495,7 @@ body {
   }
 }
 .news-page__hero .news-page__body p {
-  margin-top: 0.834vw;
+  margin-top: 16px;
 }
 @media (max-width: 1919px) {
   .news-page__hero .news-page__body p {
@@ -5521,11 +5524,16 @@ body {
   }
 }
 .news-page__hero .news-page__image-wrapper .news-page__image {
-  padding-top: 49.6%;
+  height: 596px;
+}
+@media (max-width: 1919px) {
+  .news-page__hero .news-page__image-wrapper .news-page__image {
+    height: 31.058vw;
+  }
 }
 @media (max-width: 768px) {
   .news-page__hero .news-page__image-wrapper .news-page__image {
-    padding-top: 47%;
+    height: 42.056vw;
   }
 }
 .sec2-news-page {
@@ -5649,9 +5657,10 @@ body {
 }
 .sec3-news-page .sec3-news-page__video {
   margin-top: 80px;
-  padding-top: 51.3%;
+  height: 740px;
 }
 .sec3-news-page .sec3-news-page__video::before {
+  cursor: pointer;
   content: '';
   position: absolute;
   z-index: 2;
@@ -5677,11 +5686,13 @@ body {
 @media (max-width: 1919px) {
   .sec3-news-page .sec3-news-page__video {
     margin-top: 4.169vw;
+    height: 38.562vw;
   }
 }
 @media (max-width: 768px) {
   .sec3-news-page .sec3-news-page__video {
     margin-top: 5.607vw;
+    height: 46.729vw;
   }
 }
 .sec4-news-page {
@@ -6277,9 +6288,20 @@ body {
     display: none;
   }
 }
+.sec7-news-page-history__swiper {
+  overflow: visible!important;
+}
 @media (max-width: 768px) {
   .sec7-news-page-history__swiper {
     display: none;
+  }
+}
+.sec7-news-page-history__swiper .item-history__img img {
+  max-width: 400px;
+}
+@media (max-width: 1919px) {
+  .sec7-news-page-history__swiper .item-history__img img {
+    max-width: 20.844vw;
   }
 }
 .sec7-news-page-history-mobile {

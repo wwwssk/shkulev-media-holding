@@ -487,9 +487,22 @@ body {
   justify-content: space-between;
   flex-direction: column;
 }
+.contacts .contacts__container .contacts__row .contacts__body svg {
+  width: 27px;
+  height: 18px;
+}
+@media (max-width: 1919px) {
+  .contacts .contacts__container .contacts__row .contacts__body svg {
+    width: 1.407vw;
+    height: 0.938vw;
+  }
+}
 @media (max-width: 768px) {
   .contacts .contacts__container .contacts__row .contacts__body {
     gap: 5.607vw;
+  }
+  .contacts .contacts__container .contacts__row .contacts__body svg {
+    display: none;
   }
 }
 .contacts .contacts__container .contacts__row .contacts__body .contacts__loc {
@@ -502,7 +515,7 @@ body {
     gap: 1.25vw;
   }
 }
-.contacts .contacts__container .contacts__row .contacts__body .contacts__loc img {
+.contacts .contacts__container .contacts__row .contacts__body .contacts__loc svg {
   position: relative;
   top: 0.3vw;
 }
@@ -584,10 +597,6 @@ body {
 @media (max-width: 1919px) {
   .contacts .contacts__container .contacts__row .contacts__body .contacts__send {
     font-size: 1.25vw;
-  }
-  .contacts .contacts__container .contacts__row .contacts__body .contacts__send img {
-    width: 1.4vw;
-    height: 0.94vw;
   }
 }
 @media (max-width: 768px) {
@@ -4770,11 +4779,19 @@ body {
   margin-top: 80px;
   row-gap: 80px;
 }
+.contacts-page__body svg {
+  width: 27px;
+  height: 18px;
+}
 @media (max-width: 1919px) {
   .contacts-page__body {
     margin: 0 -2.084vw;
     margin-top: 4.169vw;
     row-gap: 4.169vw;
+  }
+  .contacts-page__body svg {
+    width: 1.407vw;
+    height: 0.938vw;
   }
 }
 @media (max-width: 768px) {
@@ -4783,6 +4800,9 @@ body {
     display: flex;
     flex-direction: column;
     row-gap: 9.346vw;
+  }
+  .contacts-page__body svg {
+    display: none;
   }
   .contacts-page__body .contacts-page__item-title {
     white-space: nowrap;
@@ -4817,10 +4837,9 @@ body {
   display: flex;
   align-items: flex-start;
 }
-.contacts-page__body .contacts-page__item .contacts-page__item-column .contacts-page__item-loc img {
-  display: block;
+.contacts-page__body .contacts-page__item .contacts-page__item-column .contacts-page__item-loc svg {
   position: relative;
-  top: 10px;
+  top: 0.3vw;
 }
 .contacts-page__body .contacts-page__item .contacts-page__item-column .contacts-page__item-loc span {
   margin-left: 24px;

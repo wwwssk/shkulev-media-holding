@@ -1,5 +1,4 @@
 /* ---------news-------------------news--------------------------news------------------ */
-					
 
 							const newsFilterBtns = $('.news__btns-filter');
 							const newsSwiperItems = $('.news__item');
@@ -48,27 +47,6 @@
 									}
 								});
 							}
-
-							/* const news_btn_filter_first = document.querySelector('.news__btn-filter-first');
-							const news_item = document.querySelector('.news__item'); */
-							/* if (news_btn_filter_first.contains('active')) {
-								for(var i = 0; i < news_item.length; i++){
-									news_item[i].addEventListener('click', function(){
-										for(var i = 0; i < box.length; i++) {
-											box[i].classList.remove('activef');
-										}
-									});
-								}
-							} */
-							/* if (true) {
-								news_btn_filter_first.addEventListener("click", function(e) {
-									for(var i = 0; i < news_item.length; i++){
-										news_item[i].classList.remove('activef');
-									}
-								});
-							} */
-							
-
 
 
 

@@ -424,7 +424,6 @@ body {
 							}
 						}
 
-						.general-swiper__image {}
 					}
 
 					.general-swiper__item-text {
@@ -848,8 +847,6 @@ body {
 				align-items: center;
 			}
 
-			.history__title {
-			}
 
 
 			.history__description {
@@ -1266,7 +1263,6 @@ body {
 					padding: 0 2.084vw;
 				}
 
-				.menu-page__title {}
 
 				.menu-page__list {
 					margin-top: 32px;
@@ -1813,7 +1809,6 @@ body {
 				}
 			}
 
-			.events__title {}
 
 			.events__filter-btns {
 				display: flex;
@@ -1862,11 +1857,6 @@ body {
 					order: 2;
 				}
 
-				.events__swiper-btns {
-					.events__swiper-btn-prev {}
-
-					.events__swiper-btn-next {}
-				}
 			}
 		}
 	}
@@ -1899,7 +1889,6 @@ body {
 					padding-top: 100%;
 					max-width: 70.093vw;
 					max-height: 70.093vw;
-					img {}
 				}
 		}
 	}
@@ -1929,7 +1918,6 @@ body {
 			.events__image {
 				padding-top: 100%;
 
-				img {}
 			}
 
 			span {
@@ -2146,7 +2134,6 @@ body {
 				}
 			}
 
-			.projects__filter-btns-desktop {}
 
 			.projects__filter-btns-mobile {
 				display: none;
@@ -3599,7 +3586,6 @@ body {
 		display: flex;
 		justify-content: space-between;
 
-		.vacancies-noimage-page__title {}
 
 		.vacancies-noimage-page__our-vacancies-link {
 			display: flex;
@@ -7190,6 +7176,12 @@ body {
 	@media (max-width: 1919px){
 		margin-top: 9.380vw;
 	}
+	a {
+		transition: all 0.3s ease 0s;
+		&:hover{
+			opacity: 0.7;
+		}
+	}
 	.media-kit-link__logo {
 		@media (max-width: 1919px){
 			img {
@@ -7299,7 +7291,8 @@ body {
 						font-size: 1.668vw;
 					}
 				}
-				img {
+				svg {
+					width: 40px;
 					@media (max-width: 1919px){
 						width: 2.084vw;
 					}

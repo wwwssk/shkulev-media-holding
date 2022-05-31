@@ -7000,6 +7000,12 @@ body {
     margin-top: 9.38vw;
   }
 }
+.media-kit-link a {
+  transition: all 0.3s ease 0s;
+}
+.media-kit-link a:hover {
+  opacity: 0.7;
+}
 @media (max-width: 1919px) {
   .media-kit-link .media-kit-link__logo img {
     max-width: 21.939vw;
@@ -7122,8 +7128,11 @@ body {
     font-size: 1.668vw;
   }
 }
+.links-block .links-block__row .links-block__item .links-block__link svg {
+  width: 40px;
+}
 @media (max-width: 1919px) {
-  .links-block .links-block__row .links-block__item .links-block__link img {
+  .links-block .links-block__row .links-block__item .links-block__link svg {
     width: 2.084vw;
   }
 }

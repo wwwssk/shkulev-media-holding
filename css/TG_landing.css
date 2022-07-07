@@ -267,6 +267,7 @@
   }
 }
 .tg_landing .cards .cards__items .cards__row .cards__item .cards__column {
+  cursor: pointer;
   width: 100%;
 }
 .tg_landing .cards .cards__items .cards__row .cards__item .cards__column .cards__img {

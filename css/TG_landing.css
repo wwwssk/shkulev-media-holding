@@ -1,3 +1,9 @@
+.tg_landing button {
+  transition: all 0.3s ease 0s;
+}
+.tg_landing button:hover {
+  opacity: 0.7;
+}
 .tg_landing .title {
   font-family: 'Mabry Pro';
   font-style: normal;
@@ -600,6 +606,9 @@
   cursor: pointer;
   transition: all 0.3s ease 0s;
 }
+.tg_landing .radiobuttons__item:hover {
+  opacity: 0.7;
+}
 @media (max-width: 1919px) {
   .tg_landing .radiobuttons__item {
     margin-top: 1.251vw;
@@ -720,6 +729,10 @@
   text-align: center;
   color: #284CA6;
   position: relative;
+  transition: all 0.3s ease 0s;
+}
+.tg_landing .basket .basket__header .basket__link:hover {
+  opacity: 0.7;
 }
 @media (max-width: 1919px) {
   .tg_landing .basket .basket__header .basket__link {
@@ -928,6 +941,11 @@
 .tg_landing .basket .basket__items .basket__item .basket__item--delete {
   width: 40px;
   height: 40px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+}
+.tg_landing .basket .basket__items .basket__item .basket__item--delete:hover {
+  opacity: 0.7;
 }
 .tg_landing .basket .basket__items .basket__item .basket__item--delete img {
   width: 100%;
@@ -994,6 +1012,7 @@
   }
 }
 .tg_landing .basket .basket__btn {
+  cursor: pointer;
   width: 680px;
   height: 80px;
   margin-top: 40px;
